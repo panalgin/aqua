@@ -10,17 +10,16 @@ using System.Windows.Forms;
 
 namespace Aqua
 {
-    public partial class MainForm : Form
+    public partial class BuyCreditsMdi : Form
     {
-        public MainForm()
+        public BuyCreditsMdi()
         {
             InitializeComponent();
         }
 
-        private void Load_Credits_Button_Click(object sender, EventArgs e)
+        private void Cancel_Button_Click(object sender, EventArgs e)
         {
-            BuyCreditsMdi mdi = new BuyCreditsMdi();
-            mdi.ShowDialog();
+            this.Close();
         }
     }
 }
