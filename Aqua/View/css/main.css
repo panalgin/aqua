@@ -53,11 +53,10 @@ div { display: block; }
 }
 
 #logo {
-    width: 200px;
-    left: 25px;
+    width: 175px;
+    left: 37.5px;
     bottom: 20px;
     position: absolute;
-
 }
 
 .right-pane {
@@ -83,11 +82,12 @@ div { display: block; }
 }
 
 #nav-bar li {
-    width: 55px;
-    height: 36px;
+    width: 70px;
+    height: 55px;
     display: block;
     text-align: center;
     cursor: pointer;
+    line-height: 55px;
 }
 
 #nav-bar li i {
@@ -96,8 +96,8 @@ div { display: block; }
     width: 32px;
     height: 32px;
     display: block;
-    margin-left: 11.5px;
-    margin-top: 2px;
+    margin-left: 19px;
+    margin-top: 11.5px;
 }
 
 #nav-bar #settings-nav-item i {
