@@ -17,10 +17,9 @@ namespace Aqua
             InitializeComponent();
         }
 
-        private void Load_Credits_Button_Click(object sender, EventArgs e)
+        private void MainForm_Load(object sender, EventArgs e)
         {
-            BuyCreditsMdi mdi = new BuyCreditsMdi();
-            mdi.ShowDialog();
+
         }
     }
 }

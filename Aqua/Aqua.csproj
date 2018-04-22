@@ -46,12 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BuyCreditsMdi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BuyCreditsMdi.Designer.cs">
-      <DependentUpon>BuyCreditsMdi.cs</DependentUpon>
-    </Compile>
+    <Compile Include="KeyboardHook.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,9 +55,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="BuyCreditsMdi.resx">
-      <DependentUpon>BuyCreditsMdi.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,37 +82,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\payment-icon.png" />
+    <Content Include="View\index.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\inventory-maintenance-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\safe-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\User-Interface-Settings-3-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\account_menu.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\box_open.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\safe.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\setting_tools.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\card_credit.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\combined_chart.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\58070-200.png" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
