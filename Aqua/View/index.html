@@ -3,9 +3,40 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.date-format.js"></script>
+    <title>Aqua - 0.0.1</title>
 </head>
 <body>
+    <div class="left-pane">
+        <span id="clock">--:--</span>
+        <p id="date">-- ---- ---- ----</p>
 
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("body").on("click", "#clock", function (e) {
+                windowsApp.showDevTools();
+            });
+
+            var wasOn = false;
+
+            setInterval(function () {
+                var now = new Date().getTime();
+                $("#date").html($.format.date(now, "dd MMMM yyyy ddd"));
+
+                var clockPattern = "HH:mm";
+
+                if (wasOn)
+                    clockPattern = "HH mm";
+
+                $("#clock").html($.format.date(now, clockPattern));
+
+                wasOn = !wasOn;
+            }, 1000);
+        });
+    </script>
 </body>
 </html>

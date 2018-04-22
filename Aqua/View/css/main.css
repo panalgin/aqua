@@ -1,0 +1,50 @@
+﻿@font-face {
+    font-family: Myriad;
+    src: url('../fonts/Myriad Pro Regular.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Myriad;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    user-select: none;
+}
+
+.left-pane {
+    background-color: #ee9b00;
+    width: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 50px;
+}
+
+#clock {
+    font-size: 46px;
+    font-weight: 500;
+    display: block;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 20px;
+    left: 0;
+}
+
+#date {
+    font-size: 28px;
+    font-weight: 500;
+    display: block;
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    margin: 0;
+    top: 80px;
+    left: 10%;
+    word-break: break-word;
+}
