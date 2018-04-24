@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using CefSharp;
 using CefSharp.WinForms;
 using System.Windows.Forms;
+using Aqua.Logic;
 
 namespace Aqua
 {
@@ -32,7 +33,7 @@ namespace Aqua
             }));
         }
 
-        public void ToggleWindow()
+        public bool ToggleWindow()
         {
             this.Parent.BeginInvoke(new Action(delegate ()
             {
@@ -41,6 +42,8 @@ namespace Aqua
                 else
                     this.Parent.WindowState = FormWindowState.Normal;
             }));
+
+            return this.Parent.WindowState == FormWindowState.Maximized;
         }
 
         public void Minimize()
@@ -50,5 +53,23 @@ namespace Aqua
                 this.Parent.WindowState = FormWindowState.Minimized;
             }));
         }
+
+        public void ResizeWindow(int dir)
+        {
+            this.Parent.Invoke(new Action(delegate ()
+            {
+                this.Parent.ForceResize((ResizeDirection)dir);
+            }));
+        }
+
+        public void DragWindow()
+        {
+            this.Parent.Invoke(new Action(delegate ()
+            {
+                this.Parent.ForceDrag();
+            }));
+        }
+
+
     }
 }

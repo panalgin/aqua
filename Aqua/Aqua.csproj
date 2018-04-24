@@ -73,6 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="KeyboardHook.cs" />
+    <Compile Include="Logic\ResizeDirections.cs" />
     <Compile Include="MainController.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>

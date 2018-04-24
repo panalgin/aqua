@@ -14,6 +14,7 @@ body {
     right: 0;
     bottom: 0;
     user-select: none;
+    overflow: hidden;
 }
 
 div { display: block; }
@@ -65,7 +66,7 @@ div { display: block; }
     top: 0;
     position: absolute;
     bottom: 50px;
-    right: 0px;
+    right: 0;
 }
 
 #nav-bar {
@@ -101,22 +102,22 @@ div { display: block; }
 }
 
 #nav-bar #settings-nav-item i {
-    background: url('../img/5.png') 0px -200px;
+    background: url('../img/5.png') 0 -200px;
     background-size: 32px;
 }
 
 #nav-bar #settings-nav-item:hover i {
-    background: url('../img/5.png') 0px -150px;
+    background: url('../img/5.png') 0 -150px;
     background-size: 32px;
 }
 
 #nav-bar #reports-nav-item i {
-    background: url('../img/5.png') 0px -100px;
+    background: url('../img/5.png') 0 -100px;
     background-size: 32px;
 }
 
 #nav-bar #reports-nav-item i:hover {
-    background: url('../img/5.png') 0px -30px;
+    background: url('../img/5.png') 0 -30px;
     background-size: 32px;
 }
 
@@ -130,14 +131,14 @@ div { display: block; }
 }
 
 .control-box i {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     width: 48px;
     height: 48px;
     display: block;
     background: url('../img/9.png');
     background-repeat: no-repeat;
-    background-size: 96px 192px !important;
+    background-size: 96px 192px;
     cursor: pointer;
     float: left;
     margin-left: 4px;
@@ -152,15 +153,15 @@ div { display: block; }
 }
 
 .control-box #max-normalize {
-    background-position: 0px -48px;
+    background-position: 0 -48px;
 }
 
 .control-box #max-normalize:hover {
-    background-position: 0px -144px;
+    background-position: 0 -144px;
 }
 
 .control-box #minimize {
-    background-position: -48px 0px;
+    background-position: -48px 0;
 }
 
 .control-box #minimize:hover {
@@ -168,11 +169,11 @@ div { display: block; }
 }
 
 .control-box #help {
-    background-position: 0px 0px;
+    background-position: 0 0;
 }
 
 .control-box #help:hover {
-    background-position: 0px -96px;
+    background-position: 0 -96px;
 }
 
 #content {
@@ -183,6 +184,7 @@ div { display: block; }
     left: 70px;
     bottom: 50px;
     display: block;
+    overflow: hidden;
 }
 
 .card {
@@ -191,8 +193,8 @@ div { display: block; }
     height: 255px;
     overflow: hidden;
     margin: 10px;
-    margin-right: 0px;
-    margin-bottom: 0px;
+    margin-right: 0;
+    margin-bottom: 0;
     float: left;
     
     position: relative;
@@ -219,5 +221,22 @@ div { display: block; }
     left: -5px;
 }
 
+.thumb {
+    position: absolute;
+    background-color: #ff00ea;
+    opacity: 1.0;
+    overflow: hidden;
+    display: block;
+}
+
+.caption { height: 25px; top: 4px; left: 150px; right: 105px; cursor: grab;}
+.left-thumb { width: 4px; top: 30px; bottom: 30px; left: 0px; cursor: w-resize; }
+.right-thumb { width: 4px; top: 30px; bottom: 30px; right: 0px; cursor: e-resize; }
+.top-thumb { height: 4px; top: 0px; left: 30px; right: 30px; cursor: n-resize; }
+.bottom-thumb { height: 4px; bottom: 0px; left: 30px; right: 30px; cursor: s-resize; }
+.top-left-thumb { height: 7px; width: 7px; top: 0px; left: 0px; cursor: nw-resize; }
+.bottom-left-thumb { height: 7px; width: 7px; bottom: 0px; left: 0px; cursor: sw-resize; }
+.top-right-thumb { height: 7px; width: 7px; top: 0px; right: 0px; cursor: ne-resize; }
+.bottom-right-thumb { height: 7px; width: 7px; bottom: 0px; right: 0px; cursor: se-resize; }
 
 
