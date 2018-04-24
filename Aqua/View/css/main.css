@@ -175,5 +175,49 @@ div { display: block; }
     background-position: 0px -96px;
 }
 
+#content {
+    
+    position: absolute;
+    right: 25px;
+    top: 80px;
+    left: 70px;
+    bottom: 50px;
+    display: block;
+}
+
+.card {
+    background-color: #57a9df;
+    width: calc(35% - 15px);
+    height: 255px;
+    overflow: hidden;
+    margin: 10px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    float: left;
+    
+    position: relative;
+}
+
+.card .heading {
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.card ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.card ul li:before {
+    content: '+';
+    left: -5px;
+}
+
 
 

@@ -24,7 +24,9 @@
         </div>
         <script type="text/javascript">
             $().ready(function () {
-
+                $.get("inc/cards.html", function (data) {
+                    $("div#content").html(data);
+                });
             });
         </script>
     </div>
