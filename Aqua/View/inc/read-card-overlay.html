@@ -1,9 +1,17 @@
 ﻿<div class="modal-overlay">
-    <img src="../img/read-icon.png" />
+    <img class="rfid-icon" src="img/read-icon.png" />
     <p>KARTI OKUTUNUZ</p>
 
     <div class="modal-footer">
-        <img class="modal-logo" src="../img/logo.png" />
-        <div class="close-button" />
+        <div class="close-button"></div>
     </div>
+    <img class="modal-logo" src="img/logo.png" />
+
+    <script type="text/javascript">
+        $().ready(function () {
+            $("div.modal-overlay").on("click", ".modal-footer div.close-button", function (e) {
+                $("div.modal-overlay").remove();
+            });
+        });
+    </script>
 </div>

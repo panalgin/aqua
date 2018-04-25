@@ -24,12 +24,19 @@
             $().ready(function () {
                 $("body").on("click", "#nav-bar li", function (e) {
                     var id = $(this).prop("id").replace("-nav-item", "");
+                    var pagePath = "";
 
                     switch (id) {
-                        case "load-credits": {
+                        case "load-credits": pagePath = "inc/read-card-overlay.html"; break;
+                        case "settings": pagePath = "inc/load-credits.html"; break;
+                    }
 
-                            break;
-                        }
+                    if (pagePath.length > 0) {
+                        $.get(pagePath, function (data) {
+                            var page = $(data);
+                            $("body").append(page);
+                        });
+
                     }
                 });
             });
