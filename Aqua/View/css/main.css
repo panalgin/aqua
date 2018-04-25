@@ -111,12 +111,12 @@ div { display: block; }
     background-size: 32px;
 }
 
-#nav-bar #reports-nav-item i {
+#nav-bar #load-credits-nav-item i {
     background: url('../img/5.png') 0 -100px;
     background-size: 32px;
 }
 
-#nav-bar #reports-nav-item i:hover {
+#nav-bar #load-credits-nav-item i:hover {
     background: url('../img/5.png') 0 -30px;
     background-size: 32px;
 }
@@ -177,7 +177,6 @@ div { display: block; }
 }
 
 #content {
-    
     position: absolute;
     right: 25px;
     top: 80px;
@@ -227,6 +226,7 @@ div { display: block; }
     opacity: 1.0;
     overflow: hidden;
     display: block;
+    z-index: 99999;
 }
 
 .caption { height: 25px; top: 4px; left: 150px; right: 105px; cursor: grab;}
@@ -238,5 +238,15 @@ div { display: block; }
 .bottom-left-thumb { height: 7px; width: 7px; bottom: 0px; left: 0px; cursor: sw-resize; }
 .top-right-thumb { height: 7px; width: 7px; top: 0px; right: 0px; cursor: ne-resize; }
 .bottom-right-thumb { height: 7px; width: 7px; bottom: 0px; right: 0px; cursor: se-resize; }
+
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #141213;
+    z-index: 1;
+}
 
 

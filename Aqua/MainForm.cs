@@ -63,7 +63,7 @@ namespace Aqua
                 await Task.Delay(3000);
                 this.BeginInvoke(new Action(delegate ()
                 {
-                    MessageBox.Show("Unexpected error 0x000001H happened in memory-map.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //MessageBox.Show("Unexpected error 0x000001H happened in memory-map.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     //this.Close();
                 }));
             });

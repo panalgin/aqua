@@ -17,9 +17,23 @@
     </div>
     <div class="right-pane">
         <ul id="nav-bar">
-            <li id="reports-nav-item"><i></i></li>
+            <li id="load-credits-nav-item"><i></i></li>
             <li id="settings-nav-item"><i></i></li>
         </ul>
+        <script type="text/javascript">
+            $().ready(function () {
+                $("body").on("click", "#nav-bar li", function (e) {
+                    var id = $(this).prop("id").replace("-nav-item", "");
+
+                    switch (id) {
+                        case "load-credits": {
+
+                            break;
+                        }
+                    }
+                });
+            });
+        </script>
         <div id="content">
         </div>
         <script type="text/javascript">
